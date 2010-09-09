@@ -93,7 +93,7 @@ def get_start_time(hours, minutes)
   return now > meeting_time_today ? meeting_time_today + 1 : meeting_time_today
 end
 
-starting = get_start_time 9, 30
+starting = get_start_time 12, 20
 diff = starting - DateTime::now()
 hours, mins, secs, ignore_fractions = Date::day_fraction_to_time(diff)
 
